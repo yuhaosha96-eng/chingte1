@@ -278,6 +278,7 @@ nav button.on{color:var(--accent)}
 /* ============ 数据：来自《生科2601班级课表.xls》 ============ */
 const W1 = new Date(2026, 8, 7);   // 第1周 周一
 const SEM_WEEKS = 20;
+const APP_VER = "r6 · 2026-10-29 21:45";
 
 const PERIODS = [
   {p:"1-2",  s:"08:00", e:"09:40", sub:[["08:00","08:45"],["08:55","09:40"]]},
@@ -585,7 +586,8 @@ function renderAll(){
   h += '<div class="sec">说明</div><div class="item"><div style="font-size:11.5px;color:var(--ink3);line-height:1.8">' +
        "军事技能（军训）第 5–8 周，期间常规课暂停；<br>" +
        "「地点待定」的体育、基础化学实验以教务通知为准；<br>" +
-       "自定义日程保存在本机浏览器，换设备不会同步。</div></div>";
+       "自定义日程保存在本机浏览器，换设备不会同步。<br>" +
+       "版本：" + APP_VER + "</div></div>";
   document.getElementById("grid").style.display = "none";
   document.getElementById("strip").style.display = "none";
   document.getElementById("page").innerHTML = '<div class="page">' + h + "</div>";

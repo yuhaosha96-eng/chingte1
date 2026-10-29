@@ -1,4 +1,4 @@
-const CACHE = "kb2601-v4";
+const CACHE = "kb2601-v5";
 const FILES = [
   "./",
   "./index.html",
